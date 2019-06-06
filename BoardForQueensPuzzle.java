@@ -45,10 +45,10 @@ public class BoardForQueensPuzzle {
 		for(int i = 0; i < lastRankFilled; i++){
 			if(filesWithQueens[i] == filesWithQueens[lastRankFilled]) //Check files
 				return true;	
-			int diagnolDistance = i + (lastRankFilled - i);
-			if(Math.abs(filesWithQueens[lastRankFilled] - filesWithQueens[i]) == diagnolDistance
-			   && Math.abs(lastRankFilled - i) == diagnolDistance){
-				return true; //Check diagnols
+			int diagonalDistance = i + (lastRankFilled - i);
+			if(Math.abs(filesWithQueens[lastRankFilled] - filesWithQueens[i]) == diagonalDistance
+			   && Math.abs(lastRankFilled - i) == diagonalDistance){
+				return true; //Check diagonals
 			}
 		}
 		return false; //Otherwise all good
